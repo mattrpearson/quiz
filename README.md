@@ -9,3 +9,14 @@ Fork this repo, add your solution and documentation on how to compile and run yo
 Obviously, we are looking for a fresh solution, not based on others' code.
 
 
+How to execute my solution:
+
+make
+./longest_compound word.list
+
+
+The solution itself is pretty simple.  The whole list of words is read in
+from the file and each word is inserted into two structures, a trie and a
+list.  The list is then iterated over and the trie is used to check for
+matching substrings.  When a word match is made, the remaining portion of the
+word will be recursively checked against the root of the trie.
